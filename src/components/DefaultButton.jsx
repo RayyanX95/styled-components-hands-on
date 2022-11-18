@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const DefaultButton = styled.button`
-  background: blueviolet;
+  background: var(--primary-color);
   color: white;
   padding: .7rem;
   display: block;
@@ -14,10 +14,10 @@ export const DefaultButton = styled.button`
 export const HipsterButton = styled(DefaultButton)`
   width: 400px;
   background: transparent;
-  color: blueviolet;
-  border: 1px solid blueviolet;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
   &:hover {
-    background-color: blueviolet;
+    background-color: var(--primary-color);
     color: white;
   }
 `

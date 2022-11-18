@@ -19,7 +19,7 @@ const Wrapper = styled.div`
   .underline {
     width: 5rem;
     height: .25rem;
-    background: blueviolet;
+    background: var(--primary-color);
     margin: 0 auto;
   }
 `
@@ -50,7 +50,7 @@ export default ComplexTitle;
 //   .underline {
 //     width: 5rem;
 //     height: .25rem;
-//     background: blueviolet;
+//     background: var(--primary-color);
 //     margin: 0 auto;
 //   }
 //   `
