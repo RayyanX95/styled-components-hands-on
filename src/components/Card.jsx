@@ -18,7 +18,7 @@ const StyledCard = styled.article`
   max-width: 3000px;
   background: var(--white);
   border-radius: 0.25rem;
-  border: 1px solid;
+  border: 1px solid #888;
   img {
     width: 100%;
     border-top-left-radius: 0.25rem;
@@ -32,12 +32,24 @@ const StyledCard = styled.article`
     padding: 0 2rem;
     h4 {
       text-transform: capitalize;
-      color: red;
+      &::before {
+        content: "Name: ";
+        color: #666;
+      }
     }
     p {
       font-weight: bold;
       color: var(--primary-color);
     }
+  }
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    box-shadow: 1px 1px 5px #666;
+    cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 600px;
   }
 `
 
