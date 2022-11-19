@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components/macro";
 
 export const DefaultButton = styled.button`
   background: var(--primary-color);
@@ -22,6 +22,17 @@ export const HipsterButton = styled(DefaultButton)`
   text-decoration: none;
   text-align: center;
   font-size: 1rem;
+  ${({ large }) => large
+    ? css`
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+`
+    : css`
+    padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+`}
   &:hover {
     background-color: var(--primary-color);
     color: white;
